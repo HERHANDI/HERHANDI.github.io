@@ -180,3 +180,17 @@ a { color: inherit; text-decoration: none; }
 .cert p:not(.meta) { color: var(--muted); font-size: 0.9rem; }
 .cert .project-link { margin-top: auto; padding-top: 10px; font-size: 0.9rem; }
 @media (max-width: 900px) { .nav-links { gap: 18px; } }
+
+/* Sertifika görselleri */
+.cert-img {
+  width: 100%; aspect-ratio: 4 / 3; object-fit: contain;
+  background: var(--bg-alt); border-radius: 8px; margin-bottom: 14px;
+  cursor: zoom-in; transition: transform 0.25s;
+}
+.cert-img:hover { transform: scale(1.02); }
+.lightbox {
+  position: fixed; inset: 0; z-index: 200; background: rgba(0, 0, 0, 0.85);
+  display: none; align-items: center; justify-content: center; padding: 20px; cursor: zoom-out;
+}
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 100%; max-height: 90vh; border-radius: 8px; }

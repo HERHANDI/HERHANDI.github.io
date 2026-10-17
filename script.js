@@ -83,3 +83,16 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.15 });
 revealItems.forEach(el => observer.observe(el));
+
+// ===== Sertifika büyütme =====
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+document.querySelectorAll(".cert-img").forEach(img =>
+  img.addEventListener("click", () => {
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightbox.classList.add("open");
+  })
+);
+lightbox.addEventListener("click", () => lightbox.classList.remove("open"));
+document.addEventListener("keydown", e => { if (e.key === "Escape") lightbox.classList.remove("open"); });
