@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hakan | SAP MM & ABAP Geliştirici</title>
+  <meta name="description" content="Hakan – SAP MM danışmanı, ABAP geliştirici, Android ve web projeleri.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ÜST MENÜ -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#anasayfa" class="logo">Hakan<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hakkimda">Hakkımda</a></li>
+        <li><a href="#deneyim">Deneyim</a></li>
+        <li><a href="#projeler">Projeler</a></li>
+        <li><a href="#egitim">Eğitim</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+        <li><button class="theme-btn" id="themeBtn" aria-label="Tema değiştir">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ANA SAYFA -->
+    <section class="hero" id="anasayfa">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-hello">Merhaba, ben</p>
+          <h1>Hakan</h1>
+          <h2 class="hero-role">
+            <span id="typed">SAP MM Danışmanı</span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-desc">
+            Kurumsal yazılım, SAP MM ve ABAP geliştirme alanında çalışıyorum.
+            Android ve web teknolojileriyle kendi projelerimi geliştiriyorum.
+            Konya'da yaşıyorum.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projeler" class="btn btn-primary">Projelerimi Gör</a>
+            <a href="#iletisim" class="btn btn-outline">İletişime Geç</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <!-- Fotoğraf eklemek için: aşağıdaki div yerine <img src="foto.jpg" alt="Hakan"> yazın -->
+          <div class="avatar">H</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HAKKIMDA -->
+    <section class="section" id="hakkimda">
+      <div class="container">
+        <h2 class="section-title">Hakkımda</h2>
+        <div class="about-grid">
+          <p>
+            SAP MM danışmanlığı ve ABAP geliştirme geçmişine sahip bir yazılımcıyım.
+            Konya Teknik Üniversitesi'nde Bilgisayar Mühendisliği tezsiz yüksek lisans
+            programına devam ediyorum. Bunun yanında yönetim bilişim sistemleri, web
+            tasarım ve insan kaynakları alanlarında eğitimimi sürdürüyorum.
+          </p>
+          <p>
+            İş süreçlerini anlayan ve bunları yazılıma dönüştürebilen bir geliştirici
+            olmayı hedefliyorum. Bulut teknolojileri (AWS), mobil uygulama geliştirme ve
+            modern web teknolojileri üzerine çalışıyorum.
+          </p>
+        </div>
+
+        <h3 class="sub-title">Yetkinlikler</h3>
+        <div class="skills">
+          <span>SAP MM</span><span>ABAP</span><span>SAP GUI</span>
+          <span>Android Studio</span><span>Kotlin / Java</span><span>Python</span>
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+          <span>MS Access</span><span>SQL</span><span>AWS</span><span>Git & GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DENEYİM -->
+    <section class="section section-alt" id="deneyim">
+      <div class="container">
+        <h2 class="section-title">Deneyim</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="card">
+              <h3>SAP MM Danışmanlığı</h3>
+              <p class="meta">Malzeme Yönetimi</p>
+              <p>Satınalma, stok yönetimi ve malzeme ana verisi süreçleri. Impress Akademi SAP MM danışmanlık sertifikası.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="card">
+              <h3>ABAP Geliştirme</h3>
+              <p class="meta">SAP Teknik</p>
+              <p>Raporlama, tablo işlemleri (EKKO, MAKT vb.), debug, form/ekran ve enhancement konularında geliştirme.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJELER -->
+    <section class="section" id="projeler">
+      <div class="container">
+        <h2 class="section-title">Projeler</h2>
+        <div class="projects">
+          <article class="project">
+            <div class="project-icon">🧬</div>
+            <h3>biovolvox</h3>
+            <p>Biyoloji eğitimine yönelik mobil uygulama projesi.</p>
+            <div class="tags"><span>Python</span><span>Mobil</span></div>
+          </article>
+          <article class="project">
+            <div class="project-icon">🗂️</div>
+            <h3>Şahsi Silah Takip Sistemi</h3>
+            <p>Personel, ruhsat ve kayıt bilgilerinin tutulduğu, imza bloklu raporlar üreten masaüstü veritabanı uygulaması.</p>
+            <div class="tags"><span>MS Access</span><span>VBA</span><span>SQL</span></div>
+          </article>
+          <article class="project">
+            <div class="project-icon">📈</div>
+            <h3>Hermes Borsa Projesi</h3>
+            <p>Hisse ve emtia verileri üzerinde yapay zeka ajanı ve makine öğrenmesi ile analiz yapan bitirme projesi.</p>
+            <div class="tags"><span>Python</span><span>ML</span><span>AI Agent</span></div>
+          </article>
+          <article class="project">
+            <div class="project-icon">📱</div>
+            <h3>Android Uygulamaları</h3>
+            <p>Android Studio ile geliştirdiğim mobil uygulamalar.</p>
+            <div class="tags"><span>Android</span><span>Kotlin</span></div>
+          </article>
+          <article class="project">
+            <div class="project-icon">🌐</div>
+            <h3>Portfolyo Sitesi</h3>
+            <p>Şu an incelediğiniz site. GitHub Pages üzerinde yayınlanıyor.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a class="project-link" href="https://github.com/HERHANDI/HERHANDI.github.io" target="_blank" rel="noopener">GitHub'da Gör →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EĞİTİM -->
+    <section class="section section-alt" id="egitim">
+      <div class="container">
+        <h2 class="section-title">Eğitim & Sertifikalar</h2>
+        <div class="edu-grid">
+          <div class="card">
+            <h3>Konya Teknik Üniversitesi</h3>
+            <p class="meta">Bilgisayar Mühendisliği – Tezsiz Yüksek Lisans</p>
+          </div>
+          <div class="card">
+            <h3>Anadolu Üniversitesi AÖF</h3>
+            <p class="meta">Yönetim Bilişim Sistemleri – Lisans</p>
+          </div>
+          <div class="card">
+            <h3>Atatürk Üniversitesi ATA-AÖF</h3>
+            <p class="meta">Web Tasarım ve Kodlama – Önlisans</p>
+          </div>
+          <div class="card">
+            <h3>İstanbul Üniversitesi AUZEF</h3>
+            <p class="meta">İnsan Kaynakları Yönetimi</p>
+          </div>
+          <div class="card">
+            <h3>SAP MM Danışmanlık Sertifikası</h3>
+            <p class="meta">Impress Akademi</p>
+          </div>
+          <div class="card">
+            <h3>AWS Certified Cloud Practitioner</h3>
+            <p class="meta">CLF-C02 – Hazırlık aşamasında</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section class="section" id="iletisim">
+      <div class="container contact">
+        <h2 class="section-title">İletişim</h2>
+        <p>İş birliği, proje veya sorularınız için bana ulaşabilirsiniz.</p>
+        <div class="contact-links">
+          <a href="mailto:hakanerhandi@gmail.com" class="btn btn-primary">✉️ E-posta Gönder</a>
+          <a href="https://github.com/HERHANDI" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+          <!-- LinkedIn adresinizi aşağıya yazın -->
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Hakan. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Yukarı çık">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
