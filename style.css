@@ -173,3 +173,10 @@ a { color: inherit; text-decoration: none; }
   .about-grid { grid-template-columns: 1fr; }
   .section { padding: 70px 0; }
 }
+
+/* Eğitim tarihleri ve sertifikalar */
+.date { color: var(--muted); font-size: 0.9rem; }
+.cert { display: flex; flex-direction: column; }
+.cert p:not(.meta) { color: var(--muted); font-size: 0.9rem; }
+.cert .project-link { margin-top: auto; padding-top: 10px; font-size: 0.9rem; }
+@media (max-width: 900px) { .nav-links { gap: 18px; } }
